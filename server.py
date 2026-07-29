@@ -20,5 +20,10 @@ def login():
     return render_template('login.html', title='Аварийный доступ')
 
 
+@app.route('/register', methods=['GET', 'POST'])
+def register():
+    pass
+
+
 if __name__ == "__main__":
     app.run(port=5000)
